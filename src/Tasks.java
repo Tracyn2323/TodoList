@@ -51,6 +51,6 @@ import java.util.Date;
         this.taskStatus = newTaskStatus;
     }
 
-
+    public void changePriority(int newPriority) { this.taskPriority = newPriority; }
 
 }
