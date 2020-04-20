@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Tasks task1 = new Tasks(Color.red,
-                "Not Started",
+                "Completed",
                 1,
                 "10 changes post return 4/16",
                 new Date(2020, 4, 16));
@@ -32,7 +32,7 @@ public class Main {
         Tasks task5 = new Tasks(Color.blue,
                 "Not Started",
                 5,
-                "Provide on going or paused projects",
+                "Provide updates for on-going projects",
                 new Date(2020,5,1));
 
     }
