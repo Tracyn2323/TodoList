@@ -16,8 +16,8 @@ public class ToDoList {
     }
 
     public void add(Tasks activity) { //adding a Tasks to something else
-        int accessPriorityHashMap = activity.taskPriority; //we get the taskPriority; and make it into a variable called createPriority
-        Queue<Tasks> listOfTasksForThisPriority = rankingPriority.get(accessPriorityHashMap);
+        int createPriority = activity.taskPriority; //we get the taskPriority; and make it into a variable called createPriority
+        Queue<Tasks> listOfTasksForThisPriority = rankingPriority.get(createPriority);
         //we use our variable createPriority to get /access our HashMap (dictionary) rankingPriority,
         // where the Keys are integers, and the Values are LinkedLists.
         // So we are using our rankingPriority as a key to get a LinkedList,
