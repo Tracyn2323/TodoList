@@ -15,7 +15,7 @@ public class Main {
                 "Not Started",
                 2,
                 "Needed updates for Snappy pages",
-                new Date(2020, 23, 04));
+                new Date(2020, 04, 23));
 
         Tasks task3 = new Tasks(Color.yellow,
                 "Not Started",
