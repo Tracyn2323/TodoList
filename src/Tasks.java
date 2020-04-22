@@ -2,7 +2,6 @@ import java.awt.*;
 import java.util.Date;
 
     public class Tasks {
-        public int taskId;
         public Color taskColor;
         public String taskStatus;
         public String taskPriority;
@@ -13,14 +12,12 @@ import java.util.Date;
         public static final String highPriority = "High";
 
 
-        public Tasks(int inputTaskId,
-                     Color inputTaskColor,
+        public Tasks(Color inputTaskColor,
                      String inputTaskStatus,
                      String inputTaskPriority,
                      String inputTaskDescription,
                      Date assignmentDue)
                       {
-            this.taskId = inputTaskId;
             this.taskColor = inputTaskColor;
             this.taskStatus = inputTaskStatus;
             this.taskPriority = inputTaskPriority;

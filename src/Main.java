@@ -5,38 +5,38 @@ import java.util.Date;
 public class Main {
 
     public static void main(String[] args) {
-        Tasks task1 = new Tasks(1,
+        Tasks task1 = new Tasks(
                  Color.red,
                 "Completed",
-                1,
+                "Medium",
                 "10 changes post return 4/16",
                 new Date(2020, 4, 16));
 
-        Tasks task2 = new Tasks(2,
+        Tasks task2 = new Tasks(
                  Color.orange,
                 "Not Started",
-                2,
+                "High",
                 "Needed updates for Snappy pages",
                 new Date(2020, 04, 23));
 
-        Tasks task3 = new Tasks(3,
+        Tasks task3 = new Tasks(
                  Color.yellow,
                 "Not Started",
-                3,
+                "Low",
                 "Update desks numbers",
                 new Date(2020, 4,30));
 
-        Tasks task4 = new Tasks(4,
+        Tasks task4 = new Tasks(
                  Color.blue,
                 "In progress",
-                4,
+                "Low",
                 "Database flow",
                 new Date(2020,4,16));
 
-        Tasks task5 = new Tasks(5,
+        Tasks task5 = new Tasks(
                  Color.blue,
                 "Not Started",
-                5,
+                "Medium",
                 "Provide updates for on-going projects",
                 new Date(2020,5,1));
 
