@@ -1,38 +1,33 @@
 import java.awt.*;
 import java.util.Date;
 
-
-
     public class Tasks {
+        public int taskId;
         public Color taskColor;
         public String taskStatus;
-        public int taskPriority;
+        public String taskPriority;
         public Date assignmentDue;
         public String taskDescription;
+        public static final String lowPriority = "Low";
+        public static final String mediumPriority = "Medium";
+        public static final String highPriority = "High";
 
 
-        public Tasks(Color inputTaskColor,
+        public Tasks(int inputTaskId,
+                     Color inputTaskColor,
                      String inputTaskStatus,
-                     int inputTaskOrder,
+                     String inputTaskPriority,
                      String inputTaskDescription,
                      Date assignmentDue)
                       {
-
+            this.taskId = inputTaskId;
             this.taskColor = inputTaskColor;
             this.taskStatus = inputTaskStatus;
-            this.taskPriority = inputTaskOrder;
+            this.taskPriority = inputTaskPriority;
             this.assignmentDue = assignmentDue;
             this.taskDescription = inputTaskDescription;
         }
 
-
-    public void changeTaskColor(Color newTaskColor) {
-        this.taskColor = newTaskColor;
-    }
-
-    public String inputTask() {
-        return taskDescription;
-    }
 
     public String getTaskStatus() {
         String notStarted = "Not Started";
@@ -44,13 +39,20 @@ import java.util.Date;
             return inProgress;
         } else if (taskStatus.matches(completed)) {
             return completed;
-        }
-        return notStarted;
+        } return notStarted;
     }
     public void changeTaskStatus(String newTaskStatus) {
         this.taskStatus = newTaskStatus;
     }
 
-    public void changePriority(int newPriority) { this.taskPriority = newPriority; }
+    public void changePriority(String newPriority) { this.taskPriority = newPriority; }
+
+    public void changeTaskColor(Color newTaskColor) {
+            this.taskColor = newTaskColor;
+        }
+
+    public String inputTask() {
+            return taskDescription;
+        }
 
 }
